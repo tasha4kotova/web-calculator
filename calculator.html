@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">О себе</a></li>
+            <li><a href="calculator.html" class="active">Калькулятор</a></li>
+            <li><a href="students.html">Студенты</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1>Калькулятор</h1>
+        <div class="calculator-card">
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="numbers">Введите числа:</label>
+                    <input type="text" id="numbers" placeholder="Например: 11, 32, 1, 22, 14">
+                </div>
+                <div class="input-group">
+                    <label for="type">Выберите тип ввода:</label>
+                    <select id="type">
+                        <option value="string">Строка с разделителем</option>
+                        <option value="array">Массив</option>
+                        <option value="list">Список</option>
+                    </select>
+                </div>
+                <button id="calculate" class="btn-primary">Вычислить</button>
+            </div>
+            <div class="result-section">
+                <h3>Результат:</h3>
+                <div id="result" class="result-box"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="signature">
+        Tasha Infinity
+    </footer>
+
+    <script src="js/calculator.js"></script>
+</body>
+</html> 
